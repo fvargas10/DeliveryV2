@@ -1,0 +1,77 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Plantilla.master.cs" Inherits="Proyect.Delivery.Plantilla" %>
+
+<!DOCTYPE html>
+<html lang="es">
+<head id="Head1" runat="server">
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta charset="utf-8" />
+    <title><%: Page.Title %> Delivery SeaFood</title>
+    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <asp:PlaceHolder ID="PlaceHolder1" runat="server">        
+        <script src="<%: ResolveUrl("~/Scripts/modernizr-2.5.3.js") %>"></script>
+    </asp:PlaceHolder>
+    <asp:ContentPlaceHolder runat="server" ID="HeadContent" />
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/estilo.css"/>
+</head>
+<body>
+    <form id="Form1" runat="server">
+
+        <nav class="navbar navbar-default bg-nav">
+        <div class="container container-padding" style="background-color: #F7CF7C">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header" style="background-color: #FFCC66">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                &nbsp;</div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">       
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a runat="server" href="~/Principal.aspx" id="A1" style="font-size: large; color: #990000; font-weight: 200; font-family: 'Kristen ITC';">|Inicio|</a>          
+                    </li>
+                    <li>
+                        <a runat="server" href="~/UsuarioIngreso.aspx" id="loginuser" style="font-size: large; color: #000000; font-weight: 200; font-family: 'Kristen ITC';">|Ingreso Usuario|</a>
+                    </li>
+                    <li>
+                        <a runat="server" href="~/RestaurantIngreso.aspx" id="loginrestaurant" style="font-size: large; color: #000000; font-family: 'Kristen ITC'; font-weight: 200">|Ingreso Restaurant|</a>
+                    </li> 
+                    <li>
+                        <a runat="server" href="~/Administracion.aspx" id="loginadmin" style="font-size: large; color: #000000; font-family: 'Kristen ITC'; font-weight: 200">|Administración|</a>
+                    </li>  
+                    <li>
+                        <a runat="server" href="~/RegistroUsuario.aspx" id="registeruser" style="font-size: large; color: #000000; font-family: 'Kristen ITC'; font-weight: 200">|Registrarme|</a>
+                    </li>  
+                               
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="body" class="bg-body">
+        <asp:ContentPlaceHolder runat="server" ID="FeaturedContent" />
+        <section class="content-wrapper main-content clear-fix">
+            <asp:ContentPlaceHolder runat="server" ID="MainContent" />
+        </section>
+        
+    </div>
+    </form>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

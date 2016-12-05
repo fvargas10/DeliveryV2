@@ -1,0 +1,51 @@
+.bg-nav{
+  background-color: #e6d4b2;
+}
+.bg-body{
+  background-color: #f3ead8;
+}
+.bg-footer{
+  background-color: #d8be8d;
+}
+.bg-table{
+  background-color: #ffffff;
+}
+.nav-bar
+{
+    margin-bottom:0px;
+}
+.container-padding
+{
+    padding-top:20px;
+    padding-bottom:20px;
+}
+.section-padding {
+  padding: 100px 0px;
+}
+section h2.titulo {
+  font-size: 40px;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+section h3.subtitulo {
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 400;
+  margin-bottom: 75px;
+}
+.boton {
+  padding: 20px 0;
+}
+footer {
+  padding: 10px 0;
+  text-align: center;
+}
+footer span.copyright {
+  line-height: 40px;
+  text-transform: none;
+}
+footer ul.quicklinks {
+  margin-bottom: 0;
+  line-height: 40px;
+  text-transform: none;
+}
