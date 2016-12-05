@@ -26,7 +26,7 @@ namespace Proyect.Delivery
                 ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "alertMessage", "alert('LOGIN OK')", true);
                 admin = catdmin.GetNameAdmin(txtrut.Text, txtpass.Text);
                 Session["NOM_ADMIN"] = admin.Nom_admin.ToString();
-                Response.Redirect("MainAdmin.aspx");
+                Response.Redirect("MenuAdministrador.aspx");
 
             }
             else

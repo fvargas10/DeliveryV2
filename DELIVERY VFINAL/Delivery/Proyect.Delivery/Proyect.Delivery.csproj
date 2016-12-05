@@ -57,9 +57,10 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="AddRestaurant.aspx" />
     <Content Include="Administracion.aspx" />
+    <Content Include="AgregarAdministrador.aspx" />
     <Content Include="AgregarPlato.aspx" />
+    <Content Include="AgregarRestaurant.aspx" />
     <Content Include="BuscarRestaurant.aspx" />
     <Content Include="css\bootstrap-theme.css" />
     <Content Include="css\bootstrap-theme.min.css" />
@@ -98,8 +99,7 @@
     <Content Include="js\jquery.js" />
     <Content Include="js\jquery.min.js" />
     <Content Include="js\npm.js" />
-    <Content Include="MainAdmin.aspx" />
-    <Content Include="ManageLocal.aspx" />
+    <Content Include="MenuAdministrador.aspx" />
     <Content Include="Principal.aspx" />
     <Content Include="packages.config" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
@@ -122,16 +122,10 @@
     <Content Include="Scripts\modernizr-2.5.3.js" />
     <Content Include="Scripts\_references.js" />
     <Content Include="UsuarioIngreso.aspx" />
+    <Content Include="validaciones.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AddRestaurant.aspx.cs">
-      <DependentUpon>AddRestaurant.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="AddRestaurant.aspx.designer.cs">
-      <DependentUpon>AddRestaurant.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Administracion.aspx.cs">
       <DependentUpon>Administracion.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -139,12 +133,26 @@
     <Compile Include="Administracion.aspx.designer.cs">
       <DependentUpon>Administracion.aspx</DependentUpon>
     </Compile>
+    <Compile Include="AgregarAdministrador.aspx.cs">
+      <DependentUpon>AgregarAdministrador.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgregarAdministrador.aspx.designer.cs">
+      <DependentUpon>AgregarAdministrador.aspx</DependentUpon>
+    </Compile>
     <Compile Include="AgregarPlato.aspx.cs">
       <DependentUpon>AgregarPlato.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="AgregarPlato.aspx.designer.cs">
       <DependentUpon>AgregarPlato.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AgregarRestaurant.aspx.cs">
+      <DependentUpon>AgregarRestaurant.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgregarRestaurant.aspx.designer.cs">
+      <DependentUpon>AgregarRestaurant.aspx</DependentUpon>
     </Compile>
     <Compile Include="BuscarRestaurant.aspx.cs">
       <DependentUpon>BuscarRestaurant.aspx</DependentUpon>
@@ -174,19 +182,12 @@
     <Compile Include="AddAdmin.aspx.designer.cs">
       <DependentUpon>AddAdmin.aspx</DependentUpon>
     </Compile>
-    <Compile Include="MainAdmin.aspx.cs">
-      <DependentUpon>MainAdmin.aspx</DependentUpon>
+    <Compile Include="MenuAdministrador.aspx.cs">
+      <DependentUpon>MenuAdministrador.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="MainAdmin.aspx.designer.cs">
-      <DependentUpon>MainAdmin.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="ManageLocal.aspx.cs">
-      <DependentUpon>ManageLocal.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="ManageLocal.aspx.designer.cs">
-      <DependentUpon>ManageLocal.aspx</DependentUpon>
+    <Compile Include="MenuAdministrador.aspx.designer.cs">
+      <DependentUpon>MenuAdministrador.aspx</DependentUpon>
     </Compile>
     <Compile Include="Plantilla.Master.cs">
       <DependentUpon>Plantilla.Master</DependentUpon>
