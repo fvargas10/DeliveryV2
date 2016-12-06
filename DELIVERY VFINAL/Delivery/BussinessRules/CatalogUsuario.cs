@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using DataAccess;
 using System.Data.Common;
-using System.Collections.Generic;
+
 
 namespace BussinessRules
 {
@@ -40,6 +40,22 @@ namespace BussinessRules
             bd.execute();
             bd.Close();
 
+        }
+
+        public Usuario ReturnRut(string rut_usuario, string pass_usuario)
+        {
+            DataAccess.DataBase bd = new DataAccess.DataBase();
+            bd.connect();
+            string sql = "SELECT RUT_USUARIO FROM USUARIO WHERE RUT_USUARIO='" + rut_usuario + "' AND PASS_USUARIO= '" + pass_usuario + "'";
+            bd.CreateCommand(sql);
+            Usuario usu = new Usuario();
+            Usuario u = null;
+            DbDataReader result = bd.Query();
+            result.Read();
+            u = new Usuario(result.GetString(0));
+            result.Close();
+            bd.Close();
+            return u;
         }
     }
 }

@@ -41,9 +41,11 @@
   <ItemGroup>
     <Compile Include="Administrador.cs" />
     <Compile Include="CatalogAdministrador.cs" />
+    <Compile Include="CatalogPedido.cs" />
     <Compile Include="CatalogPlato.cs" />
     <Compile Include="CatalogRestaurant.cs" />
     <Compile Include="CatalogUsuario.cs" />
+    <Compile Include="Pedido.cs" />
     <Compile Include="Plato.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Restaurant.cs" />

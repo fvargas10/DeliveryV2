@@ -22,9 +22,15 @@ namespace Proyect.Delivery
             bool ok = catusu.LoginUsuario(txtrut.Text, txtpass.Text);
             if (ok)
             {
+
                 Session["ok"] = true;
                 ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "alertMessage", "alert('LOGIN OK')", true);
-                Response.Redirect("BuscarRestaurant.aspx");
+                usu = catusu.ReturnRut(txtrut.Text, txtpass.Text);
+                Session["RUT_USUARIO"] = usu.Rut_usuario.ToString();
+                String Valor = txtrut.Text;
+                Response.Redirect("PedidoUsuario.aspx?Valor=" + Valor);
+                //Session["NOMBRE_REST"] = catrest.ReturnNombre(txtrut.Text, txtpass.Text);
+                Response.Redirect("PedidoUsuario.aspx");
             }
             else
             {

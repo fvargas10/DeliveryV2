@@ -93,13 +93,13 @@
     <Content Include="images\sol-puerto-montt.jpg" />
     <Content Include="images\texturaadministrador.jpg" />
     <Content Include="Index.aspx" />
-    <Content Include="AddAdmin.aspx" />
     <Content Include="js\bootstrap.js" />
     <Content Include="js\bootstrap.min.js" />
     <Content Include="js\jquery.js" />
     <Content Include="js\jquery.min.js" />
     <Content Include="js\npm.js" />
     <Content Include="MenuAdministrador.aspx" />
+    <Content Include="PedidoUsuario.aspx" />
     <Content Include="Principal.aspx" />
     <Content Include="packages.config" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
@@ -175,19 +175,19 @@
     <Compile Include="Index.aspx.designer.cs">
       <DependentUpon>Index.aspx</DependentUpon>
     </Compile>
-    <Compile Include="AddAdmin.aspx.cs">
-      <DependentUpon>AddAdmin.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="AddAdmin.aspx.designer.cs">
-      <DependentUpon>AddAdmin.aspx</DependentUpon>
-    </Compile>
     <Compile Include="MenuAdministrador.aspx.cs">
       <DependentUpon>MenuAdministrador.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="MenuAdministrador.aspx.designer.cs">
       <DependentUpon>MenuAdministrador.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PedidoUsuario.aspx.cs">
+      <DependentUpon>PedidoUsuario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PedidoUsuario.aspx.designer.cs">
+      <DependentUpon>PedidoUsuario.aspx</DependentUpon>
     </Compile>
     <Compile Include="Plantilla.Master.cs">
       <DependentUpon>Plantilla.Master</DependentUpon>

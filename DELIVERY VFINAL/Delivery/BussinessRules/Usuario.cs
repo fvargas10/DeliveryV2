@@ -29,6 +29,11 @@ namespace BussinessRules
             this.pass_usuario = pass_usuario;
         }
 
+        public Usuario(string rut_usuario)
+        {
+            this.rut_usuario = rut_usuario;
+        }
+
         public string Rut_usuario
         {
             get { return rut_usuario; }
